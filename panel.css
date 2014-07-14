@@ -1,0 +1,9 @@
+* {
+	text-align: center;
+}
+
+.button {
+	margin: 10px auto;
+	width: 200px;
+	border: 1px solid black;
+}

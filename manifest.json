@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "My DevTools Extension",
+    "description": "This is my Chrome DevTools Extension.",
+    "version": "0.0.1",
+    "devtools_page": "devtools.html",
+    "background": {
+    	"persistent": true,
+        "scripts": ["background.js"]
+    },
+//    "content_scripts": [{
+//    	"matches": [
+//		    "http://*/*",
+//		    "https://*/*",
+//		    "file:///*/*"
+//		],
+//        "css": ["content/content.css"],
+//		"js": ["content/content.js"],
+//		"run_at": "document_end"
+//    }],
+    "permissions": [
+		"tabs",
+		"http://*/*",
+		"https://*/*",
+		"file:///*/*"
+    ]
+}
